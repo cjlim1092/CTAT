@@ -1,0 +1,741 @@
+<?xml version="1.0" standalone="yes"?>
+
+<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="false" lockWidget="true" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Show All Feedback" highlightRightSelection="true" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor">
+    <startNodeMessages>
+        <message>
+            <verb>SendNoteProperty</verb>
+            <properties>
+                <MessageType>StartProblem</MessageType>
+                <ProblemName>Sammi</ProblemName>
+            </properties>
+        </message>
+        <message>
+            <verb>SendNoteProperty</verb>
+            <properties>
+                <MessageType>StartStateEnd</MessageType>
+            </properties>
+        </message>
+    </startNodeMessages>
+    <node locked="false" doneState="false">
+        <text>Sammi</text>
+        <uniqueID>1</uniqueID>
+        <dimension>
+            <x>298</x>
+            <y>30</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state1</text>
+        <uniqueID>2</uniqueID>
+        <dimension>
+            <x>300</x>
+            <y>140</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state2</text>
+        <uniqueID>3</uniqueID>
+        <dimension>
+            <x>300</x>
+            <y>250</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state3</text>
+        <uniqueID>4</uniqueID>
+        <dimension>
+            <x>300</x>
+            <y>360</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state12</text>
+        <uniqueID>13</uniqueID>
+        <dimension>
+            <x>296</x>
+            <y>470</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="true">
+        <text>Done</text>
+        <uniqueID>14</uniqueID>
+        <dimension>
+            <x>303</x>
+            <y>580</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state14</text>
+        <uniqueID>15</uniqueID>
+        <dimension>
+            <x>38</x>
+            <y>87</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state16</text>
+        <uniqueID>17</uniqueID>
+        <dimension>
+            <x>220</x>
+            <y>465</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state17</text>
+        <uniqueID>18</uniqueID>
+        <dimension>
+            <x>372</x>
+            <y>465</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state18</text>
+        <uniqueID>19</uniqueID>
+        <dimension>
+            <x>17</x>
+            <y>302</y>
+        </dimension>
+    </node>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>1</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>655faac8-40c6-7f80-9449-d5cfe4715a60</transaction_id>
+                    <Selection>
+                        <value>combo1</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateComboBox</value>
+                    </Action>
+                    <Input>
+                        <value>Short-term</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage>Since Sammi does not know when she will need to use the money the goal can be short-term or mid-term.</successMessage>
+            <hintMessage>Time frame is when the money will be needed. Since Sammi needs this as an emergency fund how would she access the funds when an emergency happens?</hintMessage>
+            <hintMessage>Any goal shorter than 1 year is short term.</hintMessage>
+            <hintMessage>Please select 'Short-term' from the highlighted menu.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">combo1</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">Short-term</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>timegoal timegoal</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>1</sourceID>
+        <destID>2</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>3</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>5172b2a9-828b-40c6-6dde-7230c0cd876c</transaction_id>
+                    <Selection>
+                        <value>combo2</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateComboBox</value>
+                    </Action>
+                    <Input>
+                        <value>Liquid</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage>Since Sammi will need the money right away when there is an emergency, she needs the money to be liquid.</successMessage>
+            <hintMessage>Liquid assets can be quickly converted into cash.</hintMessage>
+            <hintMessage>If there is an emergency, how quick would she need to access the cash?</hintMessage>
+            <hintMessage>Please select 'Liquid' from the highlighted menu.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">combo2</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">Liquid</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>liquiditygoal liquidity</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>2</sourceID>
+        <destID>3</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>5</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>f0d171fd-cc57-1540-e6e9-929cc474d2d5</transaction_id>
+                    <Selection>
+                        <value>combo3</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateComboBox</value>
+                    </Action>
+                    <Input>
+                        <value>Low </value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage>Since she is saving the money for an emergency, she has low risk tolerance.</successMessage>
+            <hintMessage>Risk tolerance is the degree of variability in investment returns an investor is willing to withstand in financial planning. The higher the risk, the higher chance that cash will be gained and lost.</hintMessage>
+            <hintMessage>Consider the consequences of risking money that will be used in an emergency.</hintMessage>
+            <hintMessage>Please select 'Low ' from the highlighted menu.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">combo3</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">Low </matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>riskgoal risk</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>3</sourceID>
+        <destID>4</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>25</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>4f04dfe1-ec2e-3e79-52d3-283ad717b1ae</transaction_id>
+                    <Selection>
+                        <value>4decision</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateRadioButton</value>
+                    </Action>
+                    <Input>
+                        <value>4decision-option-0: Since you have a low risk-tolerance you should choose a bank&#8217;s savings account </value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage>Since Sammi needed an emergency fund, she could not take any risks with her money. Since savings accounts have extremely low risk, she should look around to find a high-yeild savings account where she can earn interest to keep up with inflation.</successMessage>
+            <hintMessage>Consider how time frame, liquidity, and risk tolerance affect her investment decisions.  What kind of account would match each part of the goal.</hintMessage>
+            <hintMessage>Savings accounts save cash in a bank. Stocks buy a portion of a company and earn cash based on the market value. Bonds are lending money to a government or company and they earn cash based on company performance. Real estate is buying a house which can be sold for cash based on market value.</hintMessage>
+            <hintMessage>Please choose the option with a savings account.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">4decision</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateRadioButton</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">4decision-option-0: Since you have a low risk-tolerance you should choose a bank&#8217;s savings account </matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>decisionmatch decisionmatch</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>4</sourceID>
+        <destID>13</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>27</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>8d4a48be-a514-35d3-982e-b0a4cb033b57</transaction_id>
+                    <Selection>
+                        <value>done</value>
+                    </Selection>
+                    <Action>
+                        <value>ButtonPressed</value>
+                    </Action>
+                    <Input>
+                        <value>-1</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please click on the highlighted button.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">done</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">ButtonPressed</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">-1</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>13</sourceID>
+        <destID>14</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>29</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>e53f6ac5-ba8b-2b02-40ee-9dc585a0c996</transaction_id>
+                    <Selection>
+                        <value>combo1</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateComboBox</value>
+                    </Action>
+                    <Input>
+                        <value>Mid-term</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage>Since Sammi does not know when she will need to use the money the goal can be short-term or mid-term.</successMessage>
+            <hintMessage>Please select 'Mid-term' from the highlighted menu.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">combo1</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">Mid-term</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>timegoal timegoal</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>1</sourceID>
+        <destID>15</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>31</uniqueID>
+            <message>
+                <verb>SendNoteProperty</verb>
+                <properties>
+                    <MessageType>CorrectAction</MessageType>
+                    <Selection>
+                        <value>No_Selection</value>
+                    </Selection>
+                    <Action>
+                        <value>No_Action</value>
+                    </Action>
+                    <Input>
+                        <value>No_Value</value>
+                    </Input>
+                    <transaction_id>e53f6ac5-ba8b-2b02-40ee-9dc585a0c996</transaction_id>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please provide your answer 'No_Value' in the highlighted element.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">No_Selection</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">No_Action</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">No_Value</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>15</sourceID>
+        <destID>2</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>35</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>e8d54554-e596-7a91-e120-eddafcfb2f3e</transaction_id>
+                    <Selection>
+                        <value>4decision</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateRadioButton</value>
+                    </Action>
+                    <Input>
+                        <value>4decision-option-1: Since you have a short-term goal you should invest in a diverse mix of stocks and bonds</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>Not quite, a diverse mix of stocks and bonds is a good choice for a long-term investment goal, but it is not the best choice for a short-term investment. Also, a diverse mix of stocks and bonds, like an index fund, has low to moderate risk based on market flucuations.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please choose among the highlighted radio buttons.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Fireable Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">4decision</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateRadioButton</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">4decision-option-1: Since you have a short-term goal you should invest in a diverse mix of stocks and bonds</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>decisionmatch decisionmatch</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>4</sourceID>
+        <destID>17</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>37</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>ce9cffc2-8fee-6495-01da-35cc69510a82</transaction_id>
+                    <Selection>
+                        <value>4decision</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateRadioButton</value>
+                    </Action>
+                    <Input>
+                        <value>4decision-option-2: Since you have a long-term goal you should invest in individual stocks in the stock market</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>The goal is not long term.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please choose among the highlighted radio buttons.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">4decision</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateRadioButton</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">4decision-option-2: Since you have a long-term goal you should invest in individual stocks in the stock market</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>decisionmatch decisionmatch</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>4</sourceID>
+        <destID>18</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>39</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>6c082321-edc9-5092-96ce-9c4eaf9c48fe</transaction_id>
+                    <Selection>
+                        <value>4decision</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateRadioButton</value>
+                    </Action>
+                    <Input>
+                        <value>4decision-option-3: Since you have a high risk-tolerance you should invest in real estate </value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>Not quite. Real estate is a moderate-risk, long-term, and non-liquid goal.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please choose among the highlighted radio buttons.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">4decision</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateRadioButton</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">4decision-option-3: Since you have a high risk-tolerance you should invest in real estate </matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>decisionmatch decisionmatch</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>4</sourceID>
+        <destID>19</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <productionRule opportunities="1">
+        <ruleName>liquiditygoal</ruleName>
+        <productionSet>liquidity</productionSet>
+        <label>liquidity</label>
+        <hintMessage>Liquid assets can be quickly converted into cash.</hintMessage>
+        <hintMessage>If there is an emergency, how quick would she need to access the cash?</hintMessage>
+        <hintMessage>Please select 'Liquid' from the highlighted menu.</hintMessage>
+    </productionRule>
+    <productionRule opportunities="1">
+        <ruleName>riskgoal</ruleName>
+        <productionSet>risk</productionSet>
+        <label>riskgoal</label>
+        <hintMessage>Risk tolerance is the degree of variability in investment returns an investor is willing to withstand in financial planning. The higher the risk, the higher chance that cash will be gained and lost.</hintMessage>
+        <hintMessage>Consider the consequences of risking money that will be used in an emergency.</hintMessage>
+        <hintMessage>Please select 'Low ' from the highlighted menu.</hintMessage>
+    </productionRule>
+    <productionRule opportunities="1">
+        <ruleName>decisionmatch</ruleName>
+        <productionSet>decisionmatch</productionSet>
+        <label>decisionmatch</label>
+        <hintMessage>Consider how time frame, liquidity, and risk tolerance affect her investment decisions.  What kind of account would match each part of the goal.</hintMessage>
+        <hintMessage>Savings accounts save cash in a bank. Stocks buy a portion of a company and earn cash based on the market value. Bonds are lending money to a government or company and they earn cash based on company performance. Real estate is buying a house which can be sold for cash based on market value.</hintMessage>
+        <hintMessage>Please choose the option with a savings account.</hintMessage>
+    </productionRule>
+    <productionRule opportunities="1">
+        <ruleName>timegoal</ruleName>
+        <productionSet>timegoal</productionSet>
+        <label>timegoal</label>
+        <hintMessage>Time frame is when the money will be needed. Since Sammi needs this as an emergency fund how would she access the funds when an emergency happens?</hintMessage>
+        <hintMessage>Any goal shorter than 1 year is short term.</hintMessage>
+        <hintMessage>Please select 'Short-term' from the highlighted menu.</hintMessage>
+    </productionRule>
+    <EdgesGroups ordered="true"></EdgesGroups>
+</stateGraph>
+
